@@ -34,7 +34,7 @@ http://<環境のIP>:5601 または、https://<環境のIP>:5601 (TLS有効の�
 
 5. python環境にログイン
 ```
-docker-compose exec python_env bash
+docker-compose -f elastic-non-tls.yaml exec python_env bash
 ```
 
 6. configファイルの編集(python_env内)
