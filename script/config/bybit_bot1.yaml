@@ -1,0 +1,27 @@
+# Exchange Setting
+url: "https://api.bybit.com"
+api_key: YOUR_APIKEY
+api_secret: YOUR_SECRET
+
+# Elasticsearch Setting
+es_user: elastic
+es_pass: YOUR_ELASTIC_PASSWORD
+index_name: wallet_fund
+
+mappings:
+  properties:
+    bot_name:
+      type: keyword
+    wallet_id:
+      type: keyword
+    type:
+      type: keyword
+    amount:
+      type: double
+    adress:
+      type: keyword
+    wallet_balance:
+      type: double
+
+# Target Strategy
+bot_name: YOUR_BOTNAME
