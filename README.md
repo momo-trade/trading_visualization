@@ -13,7 +13,7 @@ https://docs.docker.jp/compose/install.html#linux
 ## 導入手順
 1. githubからソースをクローン
 ```
-git clone https://github.com/
+git clone https://github.com/momo-trade/trading_visualization.git
 ```
 2. Kibanaにログインするユーザのパスワードを設定するため.envファイルを編集
 ```
