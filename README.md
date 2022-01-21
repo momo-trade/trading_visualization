@@ -1,5 +1,7 @@
 Kibana/Elasticsearchを使ってトレードbotの損益を可視化するためのツールです。  
 dockerを使うことで環境構築を簡単にします。
+pythonスクリプトを実行することでElasticsearchにデータをためていくことができます。
+Kibanaダッシュボードの作り方、使い方については使う人がいればレクチャしますのでDMください。
 
 ## 事前準備
 dockerおよびdocker-composeの導入は事前に済ませておきます。  
@@ -79,6 +81,7 @@ python bybit_fund.py config/bybit_bot1.yaml
 - pybitモジュールを使ってHTTPリクエストを実行
 - Elasticsearch内にindexがない場合は、configに指定したindex_name、mappingに従いindexを作成
 - send_elasticsearchでは、重複データを登録しないようにElasticsearch内を検索し、新規レコードのみを登録する処理を入れている
+- httpにするかhttpsにするかでソースコードを修正する必要あり(http/httpsの部分)。ダサいのでいつか改善
 
 
 ## 参考
